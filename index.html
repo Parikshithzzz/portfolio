@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89d4af8bac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id ="header">
+    <div class="container">
+        <nav>
+            <img src="Images/Parikshith large_one.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Portfolio</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>Parikshith</span></h1>
+            <p>Elecrical Engineer, Passionate in Software</p>
+        </div>
+    </div>
+</div>
+<!-------------About-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/ME-removebg-preview.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Parikshith, a software enthusiast with a degree in Electrical Engineering. While my formal education was in
+                electrical engineering, my true passion lies in the realms of IT and software development. My journey through
+                engineering school provided a strong technical foundation, but it was the world of coding and web development that truly
+                captured my interest.
+                
+                Over the years, I've honed my skills in several programming languages and web technologies, including Python, C, HTML,
+                and CSS. I've found immense satisfaction in creating software solutions and developing websites that are not only
+                functional but also aesthetically pleasing and user-friendly.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software</span><br>Building Projects and solving DSA Problems</li>
+                        <li><span>Learning</span><br>Learning about new developments in the software field</li>
+                        <li><span>Electrical</span><br>Flyback converter for constant voltage regulation</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2020-24</span><br>National Institue of Engineering, Mysuru</li>
+                        <li><span>2018-20</span><br>Pre-University Education from Expert </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------skills/services----------------------------- -->
+<div id="services">
+    <div class="container"></div>
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                 <h2>Python</h2>
+                 <p>As a proficient Python developer with a strong foundation in data structures,
+                    I excel at solving complex problems using efficient and optimized solutions. 
+                    My expertise encompasses a wide range of data structures, including arrays, 
+                    linked lists, stacks, queues, trees, and graphs.
+                </p> 
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <h2>HTML CSS Javascript</h2>
+                <p>In crafting my portfolio, I've blended HTML, CSS, and JavaScript to create a visually 
+                    stunning and interactive showcase of my skills.Leveraging the power of HTML, 
+                    I've structured the pages with precision, ensuring a clean and intuitive user experience.
+               </p>
+           </div>
+           <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>SQL</h2>
+            <p>With a solid understanding of basic SQL, I can proficiently tackle a variety of straightforward database problems. 
+                My knowledge encompasses essential SQL commands such as SELECT, INSERT, UPDATE, and DELETE, enabling me to retrieve,
+                 manipulate, and manage data efficiently.</p>
+       </div>
+    </div>
+</div>
+<!-- -----------------------portfolio--------------------- -->
+<div id="portfolio">
+    <div class="container"></div> 
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/My Portfolio Canva Image.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>Welcome to my portfolio! As a passionate web developer, I've honed my skills in HTML, CSS, 
+                        and JavaScript, creating meaningful and dynamic digital experiences through my first web development project.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/final web scrape.png">
+                <div class="layer">
+                    <h3>Web-Scraping</h3>
+                    <p>I embarked on a personal project using Python and Beautiful Soup to develop an efficient system for 
+                        extracting valuable information from websites, automating data retrieval with precision and accuracy.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    
+</div>
+
+<!-- -----------------------------contact---------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://x.com/parikshith6000" target="_blank"><i class="fa-brands fa-twitter-square"></i></i></a>
+                    <a href="https://www.instagram.com/parikshith6000/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/parikshith-ks-43aa11207/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/Parikshith02_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright Parikshith. Made with <i class="fa-solid fa-heart"></i> by myself</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links')
+    var tabcontents = document.getElementsByClassName('tab-contents')
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");     
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxoQ00RoIozKlaiz4gNlaqiVL7_FaMzCL48WCcEZjZkwBunqCzUI6IqqkErbyS-TqzX3Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
